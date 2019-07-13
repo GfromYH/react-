@@ -1,0 +1,47 @@
+.login {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #7d7d7d;
+}
+.login .login-header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #222222;
+  padding: 0 40px;
+}
+.login .login-header img {
+  width: 40px;
+  height: 40px;
+}
+.login .login-header p {
+  display: inline-block;
+  margin-left: 15px;
+  margin-bottom: 0;
+  font-size: 25px;
+  color: #fff;
+}
+.login .login-main .login-content {
+  width: 400px;
+  height: 400px;
+  margin: 50px auto;
+  padding: 40px 40px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.login .login-main .login-content p {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 0 2px;
+}
+.login .login-main .login-content .login-form Button {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  font-size: 20px;
+}
+/*# sourceMappingURL=login.css.map */

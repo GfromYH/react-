@@ -1,0 +1,61 @@
+/*
+菜单列表数据以后添加数据就可以动态生成列表
+ */
+
+const menuList=[
+    {
+        title:'首页',
+        key:'/home',
+        icon:'mail'
+    },
+    {
+        title:'商品',
+        key:'/product',
+        icon:'mail',
+        children:[
+            {
+                title:'商品管理',
+                key:'/product',
+                icon:'mail'
+            },
+            {
+                title:'品类管理',
+                key:'/category',
+                icon:'mail'
+            },
+        ]
+    },
+    {
+        title:'用户管理',
+        key:'/user',
+        icon:'mail'
+    },
+    {
+        title:'角色管理',
+        key:'/role',
+        icon:'mail'
+    },
+    {
+        title:'图形图表',
+        key:'/charts',
+        icon:'mail',
+        children:[
+            {
+                title:'柱状图',
+                key:'/charts/bar',
+                icon:'mail',
+            },
+            {
+                title:'线图',
+                key:'/charts/line',
+                icon:'mail',
+            },
+            {
+                title:'饼图',
+                key:'/charts/pie',
+                icon:'mail',
+            },
+        ]
+    }
+]
+export default menuList
