@@ -8,8 +8,8 @@ const app=express()
 
 //迎入user路由模块
 let user=require('./router/api/user')
-//article
-// let article=require('./router/api/article')
+//category商品分类
+let category=require('./router/api/category')
 
 //connect mongodb
 mongoose.connect('mongodb://localhost:27017/react-project',{useNewUrlParser:true})
@@ -23,7 +23,7 @@ app.use(bodyParser.json())
 // require("./config/passport")(passport)
 
 app.use('/api/user',user)
-// app.use('/api/article',article)
+app.use('/api/category',category)
 
 const port = process.env.PORT || 3001;
 

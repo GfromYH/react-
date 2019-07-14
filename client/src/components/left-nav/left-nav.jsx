@@ -53,7 +53,8 @@ const { SubMenu } = Menu;
 
      render() {
         const path=[this.props.location.pathname]
-        const openPath=this.openKey
+         // console.log(path)
+        const openPath=[this.openKey]
         return(
             <Fragment>
                 <div className="left-nav">
