@@ -51,11 +51,11 @@ router.post('/addList',(req,res)=>{
         })
 })
 // 修改商品分类
-router.post('/updateList',(req,res)=>{
+router.post('/updateList/:id',(req,res)=>{
     let listFields={}
     if(req.body.name){listFields.name=req.body.name}
     if(req.body.parentId){listFields.parentId=req.body.parentId}
-    Category.findOneAndUpdate({name:req.body.name},{$set:listFields},{new:true}).then(list=>{
+    Category.findOneAndUpdate({_id:req.params.id},{$set:listFields},{new:true}).then(list=>{
         res.json({
             status:'0',
             data:list

@@ -6,8 +6,15 @@ import ajax from './ajax'
 import {message} from 'antd'
 //登录请求
 export const reqLogin=(username,password)=>ajax('/api/user/login',{username,password},'POST');
-//注册请求
-export const reqAddUser=(user)=>ajax('/api/manage/user/add',user,'POST');
+
+//获取列表数据
+export const reqList=(parentId)=>ajax('/api/category/getLists',{parentId});
+
+//添加列表数据
+export const reqAddList=({name,parentId})=>ajax('/api/category/addList',{name,parentId},"POST");
+
+//修改列表数据
+export const reqUpdateList=(id,name)=>ajax(`/api/category/updateList/${id}`,{name},"POST");
 
 //jsonp请求天气
 export const reqWeather=(adcode)=>{
